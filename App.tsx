@@ -7,17 +7,17 @@
  */
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
 import Login from './src/app/screens/signIn';
+import {StyleSheet} from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-
 
 const AppNavigator = createStackNavigator(
   {
     Login: {
       screen: Login,
     },
+  },
   {
     initialRouteName: 'Login',
   },
