@@ -7,42 +7,19 @@
  */
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import DiscoverAuction from './src/app/screens/discoverAuction';
-import HomeScreen from './src/app/homeScreen';
-import Login from './src/app/screens/login';
-import MyBids from './src/app/screens/myBids';
-import SignUp from './src/app/screens/signup';
-import {StyleSheet} from 'react-native';
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
-import firebase from 'firebase';
 
-var config = {
-  databaseURL: "https://centicbids-c0246.firebaseio.com/",
-  projectId: "centicbids-c0246",
-};
-firebase.initializeApp(config);
+import Login from './src/app/screens/signIn';
+import {createAppContainer} from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+
 
 const AppNavigator = createStackNavigator(
   {
-    Home: {
-      screen: HomeScreen,
-    },
     Login: {
       screen: Login,
     },
-    SignUp: {
-      screen: SignUp,
-    },
-    MyBids: {
-      screen: MyBids,
-    },
-    DiscoverAuction: {
-      screen: DiscoverAuction,
-    },
-  },
   {
-    initialRouteName: 'DiscoverAuction',
+    initialRouteName: 'Login',
   },
 );
 
