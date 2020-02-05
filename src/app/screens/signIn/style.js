@@ -7,7 +7,7 @@ export default StyleSheet.create({
     flex: 1,
     height: 300,
     flexDirection: 'column',
- },
+  },
   loginText: {
     fontSize: 14,
     height: 100,
@@ -19,11 +19,10 @@ export default StyleSheet.create({
     // backgroundColor: 'red',
     borderBottomColor: 'blue',
     marginBottom: 10,
-
   },
   inputLabel: {
     flex: 2,
-    width:60,
+    width: 60,
     alignItems: 'flex-start',
     height: 40,
   },
@@ -33,7 +32,7 @@ export default StyleSheet.create({
     // borderColor: 'gray',
     borderWidth: 1,
     flex: 5,
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
   },
   buttonContainer: {
     height: 50,
@@ -42,5 +41,9 @@ export default StyleSheet.create({
     // flex: 1,
     // flexDirection: 'row',
     // justifyContent: 'flex-end',
-    },
+  },
+  errorMessage: {
+    paddingLeft: 10,
+    color: 'red',
+  },
 });
